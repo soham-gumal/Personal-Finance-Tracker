@@ -90,7 +90,7 @@ export const TransactionForm = ({ onAddTransaction }: TransactionFormProps) => {
 
           {/* Amount */}
           <div className="space-y-2">
-            <Label htmlFor="amount" className="text-sm font-medium">Amount</Label>
+            <Label htmlFor="amount" className="text-sm font-medium">Amount (₹)</Label>
             <div className="relative">
               <DollarSign className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
               <Input

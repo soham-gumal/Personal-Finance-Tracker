@@ -27,7 +27,7 @@ const Index = () => {
     addTransaction(transactionData);
     toast({
       title: "Transaction Added",
-      description: `${transactionData.type === 'income' ? 'Income' : 'Expense'} of $${transactionData.amount} has been recorded.`,
+      description: `${transactionData.type === 'income' ? 'Income' : 'Expense'} of ₹${transactionData.amount} has been recorded.`,
     });
   };
 
@@ -43,7 +43,7 @@ const Index = () => {
     addBudget(budgetData);
     toast({
       title: "Budget Created",
-      description: `Budget for ${budgetData.category} has been set to $${budgetData.monthlyLimit}/month.`,
+      description: `Budget for ${budgetData.category} has been set to ₹${budgetData.monthlyLimit}/month.`,
     });
   };
 
@@ -163,13 +163,13 @@ const Index = () => {
                     <div className="space-y-2">
                       <p className="text-sm text-muted-foreground">This Month Income</p>
                       <p className="text-2xl font-bold text-income">
-                        ${reportData.monthlyData[reportData.monthlyData.length - 1]?.income.toFixed(2) || '0.00'}
+                        ₹{reportData.monthlyData[reportData.monthlyData.length - 1]?.income.toFixed(2) || '0.00'}
                       </p>
                     </div>
                     <div className="space-y-2">
                       <p className="text-sm text-muted-foreground">This Month Expenses</p>
                       <p className="text-2xl font-bold text-expense">
-                        ${reportData.monthlyData[reportData.monthlyData.length - 1]?.expenses.toFixed(2) || '0.00'}
+                        ₹{reportData.monthlyData[reportData.monthlyData.length - 1]?.expenses.toFixed(2) || '0.00'}
                       </p>
                     </div>
                     <div className="space-y-2">

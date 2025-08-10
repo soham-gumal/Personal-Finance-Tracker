@@ -108,7 +108,7 @@ export const BudgetManager = ({ budgets, transactions, onAddBudget, onDeleteBudg
                   </div>
                   
                   <div className="space-y-2">
-                    <Label htmlFor="budget-limit">Monthly Limit ($)</Label>
+                    <Label htmlFor="budget-limit">Monthly Limit (₹)</Label>
                     <Input
                       id="budget-limit"
                       type="number"
@@ -180,10 +180,10 @@ export const BudgetManager = ({ budgets, transactions, onAddBudget, onDeleteBudg
                     </div>
                     
                     <div className="space-y-2">
-                      <div className="flex justify-between text-sm">
-                        <span>Spent: ${budget.currentUsage.toFixed(2)}</span>
-                        <span>Limit: ${budget.monthlyLimit.toFixed(2)}</span>
-                      </div>
+                        <div className="flex justify-between text-sm">
+                          <span>Spent: ₹{budget.currentUsage.toFixed(2)}</span>
+                          <span>Limit: ₹{budget.monthlyLimit.toFixed(2)}</span>
+                        </div>
                       <Progress 
                         value={percentage} 
                         className={`h-2 ${
@@ -192,10 +192,10 @@ export const BudgetManager = ({ budgets, transactions, onAddBudget, onDeleteBudg
                           '[&>div]:bg-income'
                         }`}
                       />
-                      <div className="flex justify-between text-xs text-muted-foreground">
-                        <span>{percentage.toFixed(1)}% used</span>
-                        <span>${(budget.monthlyLimit - budget.currentUsage).toFixed(2)} remaining</span>
-                      </div>
+                        <div className="flex justify-between text-xs text-muted-foreground">
+                          <span>{percentage.toFixed(1)}% used</span>
+                          <span>₹{(budget.monthlyLimit - budget.currentUsage).toFixed(2)} remaining</span>
+                        </div>
                     </div>
                   </CardContent>
                 </Card>

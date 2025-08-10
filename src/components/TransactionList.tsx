@@ -74,7 +74,7 @@ export const TransactionList = ({ transactions, onDeleteTransaction }: Transacti
                 <p className={`font-semibold text-lg ${
                   transaction.type === 'income' ? 'text-income' : 'text-expense'
                 }`}>
-                  {transaction.type === 'income' ? '+' : '-'}${transaction.amount.toFixed(2)}
+                  {transaction.type === 'income' ? '+' : '-'}₹{transaction.amount.toFixed(2)}
                 </p>
               </div>
             </div>

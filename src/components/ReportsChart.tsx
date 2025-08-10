@@ -56,20 +56,20 @@ export const ReportsChart = ({ reportData }: ReportsChartProps) => {
                       <div className="flex justify-between items-center text-sm">
                         <span className="font-medium">{month.month}</span>
                         <div className="flex gap-4 text-xs">
-                          <span className="text-income">Income: ${month.income.toFixed(2)}</span>
-                          <span className="text-expense">Expenses: ${month.expenses.toFixed(2)}</span>
+                          <span className="text-income">Income: ₹{month.income.toFixed(2)}</span>
+                          <span className="text-expense">Expenses: ₹{month.expenses.toFixed(2)}</span>
                         </div>
                       </div>
                       <div className="flex gap-1 h-8 bg-muted rounded-lg overflow-hidden">
                         <div 
                           className="bg-income transition-all duration-300"
                           style={{ width: `${(month.income / maxAmount) * 50}%` }}
-                          title={`Income: $${month.income.toFixed(2)}`}
+                          title={`Income: ₹${month.income.toFixed(2)}`}
                         />
                         <div 
                           className="bg-expense transition-all duration-300"
                           style={{ width: `${(month.expenses / maxAmount) * 50}%` }}
-                          title={`Expenses: $${month.expenses.toFixed(2)}`}
+                          title={`Expenses: ₹${month.expenses.toFixed(2)}`}
                         />
                       </div>
                     </div>
@@ -91,7 +91,7 @@ export const ReportsChart = ({ reportData }: ReportsChartProps) => {
                         <div className="flex justify-between items-center">
                           <span className="font-medium">{category}</span>
                           <div className="text-right">
-                            <span className="font-semibold">${amount.toFixed(2)}</span>
+                            <span className="font-semibold">₹{amount.toFixed(2)}</span>
                             <span className="text-xs text-muted-foreground ml-2">
                               ({percentage.toFixed(1)}%)
                             </span>
@@ -130,7 +130,7 @@ export const ReportsChart = ({ reportData }: ReportsChartProps) => {
                         <div className="flex justify-between items-center">
                           <span className="font-medium">{category}</span>
                           <div className="text-right">
-                            <span className="font-semibold">${amount.toFixed(2)}</span>
+                            <span className="font-semibold">₹{amount.toFixed(2)}</span>
                             <span className="text-xs text-muted-foreground ml-2">
                               ({percentage.toFixed(1)}%)
                             </span>

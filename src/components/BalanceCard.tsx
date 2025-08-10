@@ -16,7 +16,7 @@ export const BalanceCard = ({ totalIncome, totalExpenses, balance }: BalanceCard
           <div className="flex items-center justify-between">
             <div>
               <p className="text-income-foreground/80 text-sm font-medium">Total Income</p>
-              <p className="text-2xl font-bold text-income-foreground">${totalIncome.toFixed(2)}</p>
+              <p className="text-2xl font-bold text-income-foreground">₹{totalIncome.toFixed(2)}</p>
             </div>
             <div className="p-3 bg-income-foreground/20 rounded-full">
               <TrendingUp className="h-6 w-6 text-income-foreground" />
@@ -31,7 +31,7 @@ export const BalanceCard = ({ totalIncome, totalExpenses, balance }: BalanceCard
           <div className="flex items-center justify-between">
             <div>
               <p className="text-expense-foreground/80 text-sm font-medium">Total Expenses</p>
-              <p className="text-2xl font-bold text-expense-foreground">${totalExpenses.toFixed(2)}</p>
+              <p className="text-2xl font-bold text-expense-foreground">₹{totalExpenses.toFixed(2)}</p>
             </div>
             <div className="p-3 bg-expense-foreground/20 rounded-full">
               <TrendingDown className="h-6 w-6 text-expense-foreground" />
@@ -53,7 +53,7 @@ export const BalanceCard = ({ totalIncome, totalExpenses, balance }: BalanceCard
               <p className={`text-2xl font-bold ${
                 balance >= 0 ? 'text-primary-foreground' : 'text-destructive-foreground'
               }`}>
-                ${balance.toFixed(2)}
+                ₹{balance.toFixed(2)}
               </p>
             </div>
             <div className={`p-3 rounded-full ${
