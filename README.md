@@ -1,61 +1,24 @@
-# Welcome to my project
+# Personal Finance Tracker
 
-## Project info
+This is a web application built with React and Vite to help users track their personal income and expenses.
 
-**URL**: https://lovable.dev/projects/0e29ace9-987d-4b9b-8c95-52da0bb4d29f
+## ✨ Features
 
-## How can I edit this code?
+- User authentication (Sign Up / Login)
+- Add, view, and manage financial transactions
+- Categorize spending to see where your money goes
+- Clean, modern UI built with Shadcn/ui and Tailwind CSS
 
-There are several ways of editing your application.
+## 🚀 Getting Started
 
-**Use Lovable**
+Follow these instructions to get a local copy up and running.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/0e29ace9-987d-4b9b-8c95-52da0bb4d29f) and start prompting.
+### Prerequisites
 
-Changes made via VS Code will be committed automatically to this repo.
+You need to have Node.js and npm installed on your machine.
 
-**Use your preferred IDE**
+### Installation
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in VS Code.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+1. Clone the repository:
+   ```sh
+   git clone [https://github.com/soham-gumal/Personal-Finance-Tracker.git](https://github.com/soham-gumal/Personal-Finance-Tracker.git)
